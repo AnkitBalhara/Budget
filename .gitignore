@@ -1,0 +1,51 @@
+# Dependencies
+/node_modules
+/venv
+/target
+/build
+/dist
+/out-tsc
+
+# Environment variables and sensitive data
+.env
+.env.local
+.DS_Store
+secrets.txt
+config.php  # Example for language-specific config
+
+# Compiled or generated files
+*.log
+npm-debug.log*
+yarn-error.log*
+*.tsbuildinfo
+__pycache__
+*.pyc
+*.class
+*.jar
+*.war
+*.exe
+*.dll
+*.so
+
+# IDE and editor files
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.vscode/
+!/.vscode/settings.json
+!/.vscode/tasks.json
+!/.vscode/launch.json
+!/.vscode/extensions.json
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Other misc files
+/coverage
+*.tgz
+.cache
