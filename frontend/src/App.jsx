@@ -7,10 +7,11 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Budget from './pages/Budget/Budget';
-import Expenses from './pages/Expenses';
+import { baseURL } from './service/api';
+// import Expenses from './pages/Expenses';
 
 // Configure axios
-axios.defaults.baseURL = 'http://localhost:5000/api';
+axios.defaults.baseURL = `${baseURL}/api`;
 
 // Setup axios interceptors
 axios.interceptors.request.use(
@@ -125,7 +126,7 @@ function App() {
           
           <Route path="/expenses" element={
             <ProtectedRoute>
-              <Expenses logout={logout} />
+              {/* <Expenses logout={logout} /> */}
             </ProtectedRoute>
           } />
 

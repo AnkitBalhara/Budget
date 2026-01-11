@@ -1,7 +1,9 @@
 import axios from 'axios'
 
+export const baseURL = "https://budget-zmws.onrender.com";
+
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL: `${baseURL}/api`,
   headers: {
     'Content-Type': 'application/json',
   },
